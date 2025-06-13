@@ -8,7 +8,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-weight: bold;
   background-color: var(--bg);
   background-image: var(--bg-img);
   background-position: center;
@@ -27,7 +26,6 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   min-height: 668px;
-  justify-items: end;
   grid-template-columns: 1fr;
   height: 100vh;
   align-items: center;
@@ -40,24 +38,24 @@
 
 .decorated-zone::before {
   content: "";
+  border-top: 1px solid var(--color-btn);
+  border-right: 1px solid var(--color-btn);
   position: absolute;
   top: 10px;
   right: 10px;
   block-size: 24px;
   inline-size: 24px;
-  border-top: 1px solid var(--color-btn);
-  border-right: 1px solid var(--color-btn);
 }
 
 .decorated-zone::after {
   content: "";
+  border-bottom: 1px solid var(--color-btn);
+  border-left: 1px solid var(--color-btn);
   position: absolute;
   bottom: 10px;
   left: 10px;
   block-size: 24px;
   inline-size: 24px;
-  border-bottom: 1px solid var(--color-btn);
-  border-left: 1px solid var(--color-btn);
 }
 
 .record {
@@ -89,13 +87,10 @@
 }
 
 .header__theme-menu-list {
-  list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  align-self: center;
-  padding-inline-end: 10px;
-  padding-block-start: 6px;
+  gap: 11px;
+  align-items: flex-end;
 }
 
 .header__theme-menu-item:focus-visible {
@@ -135,9 +130,6 @@
 
 .header__title {
   font-weight: 700;
-  justify-self: start;
-  margin: 0;
-  padding-inline-start: 10px;
   color: var(--color-title-head);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82.5%;
@@ -225,11 +217,11 @@
 
 .footer__title {
   font-weight: 700;
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  margin-bottom: 20px;
   line-height: 83%;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--color-title-head);
   text-shadow: 2px 2px 0 var(--accent-color);
-  margin-bottom: 20px;
 }
 
 .title-decor {
