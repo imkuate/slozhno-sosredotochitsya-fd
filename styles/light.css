@@ -24,7 +24,7 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   record {
-    display: none; 
+    display: none;
   }
 }
 
